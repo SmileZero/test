@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  deadline: 2013-07-22
+  remind: 2013-07-22 23:06:58
+  remark: MyText
+  isdone: false
+
+two:
+  title: MyString
+  deadline: 2013-07-22
+  remind: 2013-07-22 23:06:58
+  remark: MyText
+  isdone: false

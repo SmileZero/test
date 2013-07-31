@@ -1,0 +1,73 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+	widows: 100%;
+	height: 100%;
+	background-color: #2d2d2d;
+	padding:20px 100px;
+	box-sizing:border-box; 
+}
+.main{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.sessions {
+	.login_form {
+		width: 320px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	legend {
+		font-size: 16px;
+		color: grey;
+		font-weight : bold;
+	}
+
+	form {
+		margin: 20px 0 38px;
+		padding-bottom: 10px;
+	}
+
+	#username, #password {
+		outline: none;
+		border : none;
+		border-bottom: 1px solid #ccc;
+		margin-top: 30px;
+		width: 260px;
+		line-height: 1.5;
+		font-size: 16px;
+	}
+	.btn {
+		border:none; 
+		background-color: transparent; 
+		cursor:pointer;
+		font-weight : bold;
+		margin-top: 20px;
+		font-size: 18px;
+		float: right;
+		margin-right: 50px;
+	}
+	.notice {
+		color: red; 
+		line-height: 1.5;
+		font-size: 14px;
+		text-align: center;
+	}
+	.signup {
+		font-size: 16px; 
+		color: grey;
+		margin-top: 26px;
+		margin-bottom: 20px;
+		a {
+			font-weight: bold;
+			font-style: italic;
+			margin-right:5px;
+		}
+	}
+
+}
+
+.blue-hover:hover{color:#2ea1dd;}

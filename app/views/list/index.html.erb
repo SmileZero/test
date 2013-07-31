@@ -1,0 +1,63 @@
+<div class="left clearfix">
+    <div id = "datepicker">
+		
+    </div>
+</div>
+<div class="right">
+	<h1 class="mt10 tc">Let's finish tasks!</h1>
+    <% if flash[:error] %>
+        <p id="notice"><%= flash[:error] %></p>
+    <% end %>
+	<div class="new-form pr mt10">
+        <span class="new-title"><input class="add-title fs16" type="text" placeholder='Title'></span>
+        <span class="new-deadline fr d fs16"><input class='add-deadline' type='date' value=<%= Date.current %>></span>
+        <span class="new-submit" style="right:5px;top:0px;">
+            <a class="submit-btn" href="#">
+                <span class="font-icon fs25 ">%</span>
+            </a>
+        </span>
+    </div>
+    <div class="show-form mt10">
+        <div class="fs16 pdt5">
+            <a class="add-btn" href="#">
+                <span class="font-icon fs28 ">r</span>
+            </a>        
+             <a class="back-btn" href="#">
+                <span class="font-icon fs28 ">R</span>
+            </a>
+            <a class="update-btn fr" href="#">
+                <span class="font-icon fs28 ">%</span>
+            </a>    
+        </div>
+    </div>
+	<div class="task_list ofh h100 w100" id="task_list">
+		<div class="wrapper">
+			<ul class="ul-task-lists">
+			</ul>
+		</div>
+	</div>
+    <div class="one_task w100 fs16">
+    </div>
+</div>
+
+<script type="text/template" id="task-template">
+    <span class="i" data-id="<%%= id %>" ><input class="isdone" type="checkbox" <%%=isdone%>></span>
+    <span class="t"><div class="title-content to text ofh"><%%= title %></div></span>
+    <span class="fr d text"><%%= deadline %></span>
+    <span class="dbtn" style="right:10px;top:5px;">
+        <a class="del-btn" href="#">
+            <span class="font-icon fs20 ">I</span>
+        </a>
+    </span>
+</script>
+
+<script type="text/template" id="confirm-del-task-template">
+<p class="font-c fs24 lh15">Are you sure to delete this task?</p>
+</script>
+
+<script type="text/template" id="one-task-template">
+<div>Title:<span class="otitle" contenteditable="true")><%%= title %></span></div>
+<div>Deadline:<input class='odeadline' type='date' value=<%%= deadline %>></div>
+<div>Remind:&nbsp;&nbsp;<input class='oremind' type='datetime-local' value=<%%= remind %>></div>
+<div>Remark:&nbsp;&nbsp;<span class="oremark" contenteditable="true")><%%= remark %></span></div>
+</script>

@@ -1,0 +1,169 @@
+// Place all the styles related to the List controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	widows: 100%;
+	height: 100%;
+	background-color: #2d2d2d;
+	padding:20px 100px;
+	box-sizing:border-box; 
+}
+.main{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+.left{
+	float: left;
+	height: 100%;
+	width: 40%;
+	background: #fff;
+	//margin-right:2%;
+}
+.right{
+	float: left;
+	width:60%;
+	height:100%;
+	background: #fff;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+.list {
+	.ui-datepicker {
+		margin: 0 auto;
+	}
+	#datepicker {
+		margin-top: 63px;
+	}
+	.right{
+		.task_list {
+			position:relative;  
+    		z-index:1;  
+		}
+		li {
+			font-size: 16px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			list-style: none;
+			white-space:nowrap;
+		}
+		.title-content {	
+			display: inline-block;
+		}
+		.t {
+			margin-left: 10px;
+		}
+		.d {
+			margin-right: 30px;
+		}
+		.dbtn{
+			position: absolute;
+		}
+	}
+
+	.new-title {
+		margin-left: 30px;
+	}
+	.new-form {
+		display:none;
+	}
+	.show-form {
+		height: 24px;
+	}
+	.new-submit {
+		position: absolute;
+		margin-top: 4px;
+	}
+	.add-title {
+		width: 400px
+	}
+	.back-btn {
+		display:none;
+	}
+	.one-data div{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.update-btn {
+		margin-right: 10px;
+		display:none;
+	}
+}
+
+.tc{
+	text-align: center;
+}
+.pdt5{
+	padding-top:5px;
+}
+.mt10{
+	margin-top:10px;
+}
+.pr {
+	position: relative;
+}
+.h100{
+	height: 100%;
+}
+.w100{
+	width: 100%;
+}
+
+.ofh {
+	overflow:hidden;
+}
+.to{
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.line {
+	text-decoration:line-through;
+}
+.fr{
+	float: right;
+}
+.font-icon {
+	font-family: icons,sans-serif;
+}
+.fs28 {
+	font-size: 28px;
+}
+.fs25 {
+	font-size: 25px;
+}
+.fs20 {
+	font-size: 20px;
+}
+.fs18 {
+	font-size: 18px;
+}
+.fs16 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+.del-btn { display: none; }
+a.del-btn:hover { color: #ff9fb3; }
+.ul-task-lists>li:hover .del-btn{display:block;}
+a.add-btn:hover { color: #00ffff; }
+a.back-btn:hover { color: #00ffff; }
+a.submit-btn:hover { color: #00ffff; }
+a.update-btn:hover { color: #00ffff; }

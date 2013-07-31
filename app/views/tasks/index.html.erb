@@ -1,0 +1,39 @@
+<h1>Listing tasks</h1>
+    <% if flash[:error] %>
+        <p id="notice"><%= flash[:error] %></p>
+    <% end %>
+<table class="content">
+<tr>
+  <td class="date_content">
+    <%= Date.current %>
+  </td>
+  <td class="task_content" valign="top">
+    <div class="task_list">
+        <div class="wrapper">
+            <ul>
+                <% @tasks.each do |task| %>
+                    <li id='task-<%=task.id%>'>
+                        <span class="i"><%= check_box_tag(:isdone, '', task.isdone, class:'isdone') %></span>
+                        <span class="t"><%= task.title %></span>
+                        <span class="d"><%= task.deadline %></span>
+                    </li>
+                <% end %>
+                <li class="new-form">
+                    <%= form_for :task, class: 'new-task' do |t| %>
+                        <span class="new-title"><%= t.text_field :title, :placeholder=> 'Title' %></span>
+                        <span class="sumbit d"><%=t.submit "Save"%></span>
+                        <span class="new-deadline d"><%= t.text_field :deadline, :type=> 'date', :value=>Date.current %></span>
+                    <% end %>
+                </li>
+                <li>
+                    <a href="#" class="show-form">New Task</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </td>
+</tr>
+
+</table>
+
+<br />
