@@ -1,0 +1,929 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sub",
+				"subject"
+			],
+			[
+				"dea",
+				"deadline"
+			],
+			[
+				"task",
+				"tasksView"
+			],
+			[
+				"ret",
+				"retrieveValues"
+			],
+			[
+				"one",
+				"oneTaskView"
+			],
+			[
+				"set",
+				"setModel"
+			],
+			[
+				"pa",
+				"parentView"
+			],
+			[
+				"coll",
+				"collection"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"co",
+				"collection"
+			],
+			[
+				"lo",
+				"locale"
+			],
+			[
+				"users",
+				"users_url"
+			],
+			[
+				"line_i",
+				"line_item"
+			],
+			[
+				"action_",
+				"action_mailer"
+			],
+			[
+				"updated",
+				"updated_at"
+			],
+			[
+				"la",
+				"latest_order"
+			],
+			[
+				"car",
+				"cart_id"
+			],
+			[
+				"line",
+				"line_item"
+			],
+			[
+				"product",
+				"product_id"
+			],
+			[
+				"assert",
+				"assert_equal"
+			],
+			[
+				"new",
+				"new_product"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/controllers/tasks_controller.rb",
+			"settings":
+			{
+				"buffer_size": 3254,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 3498,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/list/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 2583,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/javascripts/app.js",
+			"settings":
+			{
+				"buffer_size": 89235,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/sessions.css.scss",
+			"settings":
+			{
+				"buffer_size": 1381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 1442,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/stylesheets/welcome.css.scss",
+			"settings":
+			{
+				"buffer_size": 6747,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/views/welcome/signup.html.erb",
+			"settings":
+			{
+				"buffer_size": 5314,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/sessions/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 504,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2745,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/users.js",
+			"settings":
+			{
+				"buffer_size": 1560,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/users.css.scss",
+			"settings":
+			{
+				"buffer_size": 932,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/sessions.js",
+			"settings":
+			{
+				"buffer_size": 338,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"s",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set",
+				"Set Syntax: CSS"
+			],
+			[
+				"set s",
+				"Set Syntax: CSS"
+			],
+			[
+				"",
+				"Set Syntax: CSS"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/users/new.html.erb",
+		"/C/Users/51ibm/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/51ibm/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/51ibm/AppData/Roaming/Sublime Text 2/Packages/User/HTML (Rails).sublime-settings",
+		"/C/Users/51ibm/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/51ibm/Desktop/Todolist_files/sessions.css",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/views/app/index.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/stylesheets/app.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/stylesheets/list.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/config/routes.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/config/routes.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/controllers/sessions_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/controllers/users_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/models/line_item.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/config/locales/es.yml",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/todolist.sublime-project",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/helpers/sessions_helper.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/note.txt",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/mailers/task_notifier.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/helpers/sessions_helper.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/tags_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/papers_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/user.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/config/environments/production.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/Gemfile",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/app/models/Mailer.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/app/helpers/application_helper.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/app/views/tasks/_form.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/app/views/tasks/index.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/app/views/tasks/show.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/db/migrate/20130731073431_create_tasks.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/app/models/task.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/config/database.yml",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/config/environments/production.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/config/environments/development.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/layouts/application.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/models/user.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/application_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/controllers/metadata_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/stylesheets/sessions.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/sessions/new.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/controllers/application_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/javascripts/application.js",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/Gemfile",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/stylesheets/application.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/models/task.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/clubs_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/app_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/stylesheets/scaffolds.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/javascripts/list.js",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/list/index2.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/list/index.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/list/index3.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/javascripts/application.js",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/controllers/list_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/paper.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/tag.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/metadata.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/club.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/views/layouts/application.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/config/environments/development.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/stylesheets/base.css",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/stylesheets/browser.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/stylesheets/home.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/stylesheets/welcome.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/config/environments/development.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/config/environments/production.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/config/environments/test.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/config/application.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/Gemfile",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/views/layouts/welcome.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/javascripts/welcome.js",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/views/layouts/browser.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/javascripts/home.js",
+		"/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/controllers/friends_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/tasks/index.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/config/routes.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/products/index.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/db/migrate/20130722151831_add_user_id_to_tasks.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/app/models/paper.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/app/models/doc.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/app/models/user.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/app/models/tag.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/models/user.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/db/migrate/20120416110831_add_password_digest_to_users.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/db/migrate/20120416110729_add_index_to_users_email.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/config/database.yml",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/db/migrate/20120425133819_create_tags.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/carts_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/app/models/collection.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/store_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/layouts/application.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/assets/stylesheets/application.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/config/locales/en.yml",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/orders/new.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/orders/_form.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/orders_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/config/environments/development.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/models/order.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/users_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/application_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/carts/_cart.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/store/index.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/assets/stylesheets/scaffolds.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/assets/stylesheets/carts.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/config/initializers/i18n.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/models/user.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/config/routes.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/Gemfile",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/Gemfile.lock",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/line_items_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/sessions_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/test_helper.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/fixtures/users.yml",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/functional/sessions_controller_test.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/sessions/new.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/admin/index.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/admin_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/users/index.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/functional/users_controller_test.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/users/_form.html.erb",
+		"/C/Users/51ibm/.gemrc",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/.gemrc",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/db/migrate/20120806044025_create_users.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/integration/user_stories_test.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/script/load_orders.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/orders/index.html.erb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/mailers/order_notifier.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"red",
+			"hover",
+			"btn-pri",
+			"hover",
+			"section",
+			"name asblock fs16 color-grey3",
+			"name ",
+			"logout-btn",
+			"#name",
+			"color-grey2",
+			"logout-btn",
+			"section",
+			".name",
+			"name",
+			"logout-btn",
+			"asblock",
+			"sectionp-btn-back",
+			"TaskNotifier",
+			"url",
+			"remind",
+			"retrieveValues",
+			"back-btn",
+			"contenteditable",
+			"console",
+			"back-btn",
+			"back",
+			"parentView",
+			"scroller",
+			"resize",
+			"options",
+			"scroller",
+			"alert",
+			"removeClass",
+			".save",
+			".view",
+			"this.view",
+			"setDone",
+			"this.screen",
+			"this.view",
+			"Model",
+			"this.club",
+			"collection",
+			"save",
+			"fs30",
+			"retrieveValues",
+			"load",
+			"new Club",
+			"club",
+			"clud",
+			"clue",
+			"update",
+			"FoldersView",
+			"folder",
+			"create",
+			"_addTag",
+			"add",
+			"destroy",
+			"JoinedClubView",
+			"confirmDelClubDialoge",
+			"JoinedClubView",
+			"ConfirmDelClubDialoge",
+			"Com",
+			"ComfirmDel",
+			"dialoge-template",
+			"m-m-content",
+			"del-btn",
+			"dialoge-template",
+			"Dialoge",
+			"m-m-content",
+			"del",
+			"confirmDelClubDialoge",
+			"del-btn",
+			"icons",
+			"font",
+			"icon",
+			"data-icon",
+			"icons",
+			"del-btn",
+			"clubView",
+			"delete",
+			"contentEditable",
+			"set",
+			"update",
+			"folder",
+			"change",
+			"View",
+			"tagView",
+			"taglist",
+			"_.ex",
+			"sort",
+			"sync",
+			"setStar",
+			"data",
+			"addFmClick",
+			"clickLeftBtn",
+			"clickStar",
+			"id",
+			"friend",
+			"h2",
+			"number_to_currency",
+			"3342"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"3242"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/tasks_controller.rb",
+					"settings":
+					{
+						"buffer_size": 3254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3119,
+								3119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1598.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/users_controller.rb",
+					"settings":
+					{
+						"buffer_size": 3498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								761,
+								828
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 256.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/list/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 2583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								226
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/javascripts/app.js",
+					"settings":
+					{
+						"buffer_size": 89235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9604,
+								9609
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5522.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/stylesheets/sessions.css.scss",
+					"settings":
+					{
+						"buffer_size": 1381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1271,
+								1289
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 937.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/users/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 1442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1305,
+								1305
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 261.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/stylesheets/welcome.css.scss",
+					"settings":
+					{
+						"buffer_size": 6747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								532,
+								532
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 730.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/views/welcome/signup.html.erb",
+					"settings":
+					{
+						"buffer_size": 5314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3833,
+								3802
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 374.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/sessions/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								497,
+								486
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/controllers/users_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1128,
+								1137
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1066.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/assets/javascripts/users.js",
+					"settings":
+					{
+						"buffer_size": 1560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								992,
+								1517
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 528.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/assets/stylesheets/users.css.scss",
+					"settings":
+					{
+						"buffer_size": 932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								793,
+								793
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 362.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/assets/javascripts/sessions.js",
+					"settings":
+					{
+						"buffer_size": 338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"app/views/line_items/create.js.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/Download/PortableGit-pre-alpha-64-bit/todolist/todolist.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 329.0,
+	"status_bar_visible": true
+}
