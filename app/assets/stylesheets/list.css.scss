@@ -107,8 +107,18 @@ body{
 	  left: 15%;
 	}
 	.p-btn-back a:hover span{color:#2ea1dd;}
+	.ul-task-lists {
+		padding-top:1px;
+		padding-bottom: 4px;
+	}
+	.data:hover {
+		box-shadow:0px 1px 3px rgba(0,0,0,0.60);
+	}
 }
 
+.cp {
+	cursor: pointer;
+}
 .color-grey3{color:#616265;}
 .color-grey2{color:#afafaf;}
 .asblock{
