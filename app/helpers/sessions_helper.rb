@@ -8,8 +8,8 @@ module SessionsHelper
     @current_user = user
   end
   def current_user
-    @current_user   = User.first
-    #@current_user ||= User.find_by_remember_token(cookies[:remember_token])
+    #@current_user   = User.first
+    @current_user ||= User.find_by_remember_token(cookies[:remember_token])
   end
 
   def signed_in?
@@ -37,5 +37,14 @@ module SessionsHelper
     session[:return_to] = request.url
   end
 
+  def current_scheduler
+      require 'rubygems'
+      require 'rufus/scheduler'
+      if $scheduler == nil
+        $scheduler = Rufus::Scheduler.start_new
+      else
+        $scheduler
+      end
+  end
 
 end

@@ -15,6 +15,7 @@ class TasksController < ApplicationController
     #end
   end
 
+
   # GET /tasks/1
   # GET /tasks/1.json
   def show
@@ -54,7 +55,7 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       if @task.save
-        format.html { redirect_to tasks_url, notice: 'Task was successfully created.' }
+        format.html { redirect_to home_url, notice: 'Task was successfully created.' }
         format.json { render json: @task, status: :created, location: @task }
       else
         format.html { render action: "new" }
@@ -76,6 +77,20 @@ class TasksController < ApplicationController
         elsif taskValue["remind"] != nil && taskValue["remind"] !=""  && DateTime.parse(taskValue["remind"]) != @task.remind&& DateTime.parse(taskValue["remind"]) < DateTime.now
           error "Remind can't be updated to the new time!"
         elsif @task.update_attributes(taskValue)
+          # set remind email in scheduler
+          if @task.remind != nil && @task.remind != ""
+            job = current_scheduler.find_by_tag @task.id
+            if job[0]
+              job[0].unschedule
+            end
+            current_scheduler.at @task.remind, :tags => @task.id do
+              mailer = TaskNotifier.reminder(@task)
+              mailer.deliver # It don't work under the development mode
+            end
+
+          end
+
+          #TaskNotifier.reminder(@task).deliver
           format.html { render :json => @task }
         else
           error "Failed to update record"
@@ -95,7 +110,7 @@ class TasksController < ApplicationController
       @task.destroy
 
       respond_to do |format|
-        format.html { redirect_to tasks_url }
+        format.html { redirect_to home_url }
         format.json { head :no_content }
       end
     else

@@ -43,6 +43,7 @@ $(function() {
 					tasksView.scroller.refresh();
 				},
 				error: function() {
+					tasksView.scroller.refresh();
 				}
 			});
 			
@@ -254,7 +255,7 @@ var OneTaskView = Backbone.View.extend({
 			var json = this.model.toJSON();
 			var remind = json.remind;
 			if(remind==null) remind = "";
-			else json.remind = remind.substring(0,remind.length-1);
+			else json.remind = new Date(remind).Format("yyyy-MM-ddThh:mm");
 			if(json.remark==null) json.remark = "";
 			this.$el.html(this.template(json));
 			return this;
@@ -269,11 +270,27 @@ var OneTaskView = Backbone.View.extend({
 	    	return {
 		        title: $(".otitle").html(),
 		        deadline: $(".odeadline").val(),
-		        remind: $(".oremind").val(),
+		        remind: new Date($(".oremind").val().replace("T", " ")).toISOString(),
 		        remark: $(".oremark").html()
 		    };
 		}
 });
+//======================================================================================
+Date.prototype.Format = function (fmt) {
+    var o = {
+        "M+": this.getMonth() + 1, 
+        "d+": this.getDate(), 
+        "h+": this.getHours(),
+        "m+": this.getMinutes(), 
+        "s+": this.getSeconds(), 
+        "q+": Math.floor((this.getMonth() + 3) / 3), 
+        "S": this.getMilliseconds() 
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
 //======================================================================================
 	window.myTasks = new TaskList(); 
 	var tasksView = new TasksView({collection: myTasks});

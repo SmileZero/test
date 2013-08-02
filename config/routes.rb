@@ -1,11 +1,11 @@
 Todolist::Application.routes.draw do
 
-  get "list/index"
+  match '/home', to: 'list#index', via: :get
 
   controller :sessions do
     get 'login' => :new
     post 'login' => :create
-    delete 'logout' => :destroy
+    get 'logout' => :destroy
   end
 
   get 'signup' => 'users#new'
@@ -14,7 +14,7 @@ Todolist::Application.routes.draw do
 
   resources :tasks
 
- root :to => 'list#index'
+ root :to => 'sessions#new'
 
 
   # The priority is based upon order of creation:

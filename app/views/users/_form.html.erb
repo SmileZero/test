@@ -1,29 +1,38 @@
+<div class="signup_form">
+  <fieldset>
+      <legend> Create an account </legend>
 <%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+    <%= f.text_field :username,:value => flash[:un_val], :class => "", :placeholder=> 'Email' %>
+    <div class="" style="height:10px;color:#f03737">
+      <% if flash[:un_error] %>
+        Already taken
+        <script type="text/javascript">
+            $("#user_username").css("border-bottom","1px solid #f03737");
+            $("#user_username").data("edited",true);
+        </script>
+      <% elsif flash[:email_val]!=nil %>
+        <script type="text/javascript">
+            $("#user_username").css("border-bottom","1px solid #51f037");
+            $("#user_username").data("edited",true);
+        </script>
       <% end %>
-      </ul>
     </div>
-  <% end %>
+    <%= f.password_field :password, :class => "",:placeholder => "Password" %>
+    <div class="" style="height:10px;color:#f03737">
+      <% if flash[:pwd_error] %>
+        Invalid Password
+        <script type="text/javascript">
+            $("#user_password").css("border-bottom","1px solid #f03737");
+            $("#user_password").data("edited",true);
+        </script>
+      <% end %>
+    </div>
+    <%= f.password_field :password_confirmation,:class => "",:placeholder => "Password Confirmation" %>
 
-  <div class="field">
-    <%= f.label :username,"Email" %><br />
-    <%= f.text_field :username %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.submit :class => "btn asblock fr fs18 blue-hover",:value => "Create account"  %>
 <% end %>
+
+<%= link_to 'Back', root_path , class:"back blue-hover" %>
+</fieldset>
+</div>
