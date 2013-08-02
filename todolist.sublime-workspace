@@ -146,6 +146,14 @@
 				"buffer_size": 9034,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/assets/stylesheets/application.css.scss",
+			"settings":
+			{
+				"buffer_size": 999,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -188,6 +196,9 @@
 	},
 	"file_history":
 	[
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/user.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/collection.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/tag.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/stylesheets/sessions.css.scss",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/users/_form.html.erb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/stylesheets/welcome.css.scss",
@@ -218,7 +229,6 @@
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/helpers/sessions_helper.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/tags_controller.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/papers_controller.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/user.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/config/environments/production.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/Gemfile",
 		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/app/models/Mailer.rb",
@@ -250,7 +260,6 @@
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/javascripts/application.js",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/controllers/list_controller.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/paper.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/tag.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/metadata.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/club.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/views/layouts/application.html.erb",
@@ -314,8 +323,7 @@
 		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/users/index.html.erb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/functional/users_controller_test.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/users/_form.html.erb",
-		"/C/Users/51ibm/.gemrc",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/.gemrc"
+		"/C/Users/51ibm/.gemrc"
 	],
 	"find":
 	{
@@ -457,7 +465,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -472,8 +480,8 @@
 						"selection":
 						[
 							[
-								3119,
-								3119
+								3051,
+								3051
 							]
 						],
 						"settings":
@@ -483,7 +491,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1598.0,
+						"translation.y": 1709.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -539,7 +547,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 774.0,
+						"translation.y": 306.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -584,8 +592,8 @@
 						"selection":
 						[
 							[
-								1796,
-								1794
+								1746,
+								1786
 							]
 						],
 						"settings":
@@ -594,7 +602,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1748.0,
+						"translation.y": 1788.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -650,6 +658,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 2156.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/assets/stylesheets/application.css.scss",
+					"settings":
+					{
+						"buffer_size": 999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								610,
+								610
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 181.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
