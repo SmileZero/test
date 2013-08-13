@@ -4,9 +4,9 @@ class TasksController < ApplicationController
   # GET /tasks.json
   def index
     if params.has_key? (:date)
-      @tasks = current_user.tasks.where("deadline >= ?", params[:date]).order("isdone").order("deadline")
+      @tasks = current_user.tasks.where("deadline >= ?", params[:date]).order("isdone").order("deadline").order("updated_at")
     else
-      @tasks = current_user.tasks.order("isdone").order("deadline") #.where("deadline >= ?", Date.current)
+      @tasks = current_user.tasks.where("deadline >= ?", Date.current).order("isdone").order("deadline").order("updated_at")
     end
       render :json => @tasks
     #respond_to do |format|
@@ -28,7 +28,7 @@ class TasksController < ApplicationController
         format.json { render json: @task }
       end
     else
-      error "You don't have access to this task"
+      ajax_error "You don't have access to this task"
     end
   end
 
@@ -55,11 +55,12 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       if @task.save
-        format.html { redirect_to home_url, notice: 'Task was successfully created.' }
+        #format.html { redirect_to home_url, notice: 'Task was successfully created.' }
         format.json { render json: @task, status: :created, location: @task }
       else
-        format.html { render action: "new" }
-        format.json { render json: @task.errors, status: :unprocessable_entity }
+        #format.html { render action: "new" }
+        ajax_error = @task.errors.full_messages.join("\n")
+        format.json {render :json => { :error => true, :message => ajax_error },status: :unprocessable_entity}
       end
     end
   end
@@ -72,32 +73,40 @@ class TasksController < ApplicationController
     if @task
       respond_to do |format|
         taskValue = params[:task]
-        if Date.parse(taskValue["deadline"])  != @task.deadline && Date.parse(taskValue["deadline"]) < Date.current
-          error "Deadline can't be updated to the new date!"
-        elsif taskValue["remind"] != nil && taskValue["remind"] !=""  && DateTime.parse(taskValue["remind"]) != @task.remind&& DateTime.parse(taskValue["remind"]) < DateTime.now
-          error "Remind can't be updated to the new time!"
+        deadline = Date.parse(taskValue["deadline"])
+        ori_remind = @task.remind
+        remind = (taskValue["remind"]==nil || taskValue["remind"]=="")? "": DateTime.parse(taskValue["remind"])
+        if deadline != @task.deadline && deadline < Date.current
+          ajax_error = "Deadline is invalid!"
+          format.json {render :json => { :error => true, :message => ajax_error },status: :unprocessable_entity}
+        elsif remind !=""  && remind != @task.remind && remind < DateTime.now
+          ajax_error = "Remind is invalid!"
+          format.json {render :json => { :error => true, :message => ajax_error },status: :unprocessable_entity}
         elsif @task.update_attributes(taskValue)
           # set remind email in scheduler
-          if @task.remind != nil && @task.remind != ""
-            job = current_scheduler.find_by_tag @task.id
-            if job[0]
-              job[0].unschedule
+            if @task.remind != ori_remind
+              job = current_scheduler.find_by_tag @task.id
+              if job[0]
+                job[0].unschedule
+              end
+              if @task.remind != nil &&  @task.remind != ""
+                current_scheduler.at @task.remind, :tags => @task.id do
+                  mailer = TaskNotifier.reminder(@task)
+                  mailer.deliver # It don't work under the development mode
+                end
+              end
             end
-            current_scheduler.at @task.remind, :tags => @task.id do
-              mailer = TaskNotifier.reminder(@task)
-              mailer.deliver # It don't work under the development mode
-            end
-
-          end
 
           #TaskNotifier.reminder(@task).deliver
           format.html { render :json => @task }
         else
-          error "Failed to update record"
+          ajax_error = @task.errors.full_messages.join("\n")
+          format.json {render :json => { :error => true, :message => ajax_error },status: :unprocessable_entity}
         end
       end
     else
-      error "You don't have access to this task"
+      ajax_error = "You don't have access to this task"
+      format.json {render :json => { :error => true, :message => ajax_error },status: :unprocessable_entity}
     end
   end
 
@@ -114,7 +123,8 @@ class TasksController < ApplicationController
         format.json { head :no_content }
       end
     else
-      error "You don't have access to this task"
+      ajax_error =  "You don't have access to this task"
+      format.json {render :json => { :error => true, :message => ajax_error },status: :unprocessable_entity}
     end
   end
 

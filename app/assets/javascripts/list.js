@@ -24,6 +24,7 @@ $(function() {
 			$(".add-btn").show();
 			$(".back-btn").hide();
 			$(".update-btn").hide();
+			$(".updating").hide();
 			$(".title-content").width($(".data").width()-160);
 		}
 	});
@@ -31,71 +32,121 @@ $(function() {
 		if($(".task_list").is(":hidden")==true){
 			//update data
 			//console.debug(oneTaskView.retrieveValues());
-			oneTaskView.model.set(oneTaskView.retrieveValues()).save(null,{
-				success: function() {
-					//return the task list
-					oneTaskView.hide();
-					tasksView.show();
-					$(".add-btn").show();
-					$(".back-btn").hide();
-					$(".update-btn").hide();
-					$(".title-content").width($(".data").width()-160);
-					tasksView.scroller.refresh();
-				},
-				error: function() {
-					tasksView.scroller.refresh();
+			$(".update-btn").hide();
+			$(".updating").show();
+			var temptask = oneTaskView.model
+			if(!temptask.get("isdone")) {
+				var value = oneTaskView.retrieveValues();
+				if(value.deadline!= temptask.get("deadline") && value.deadline < new Date().Format("yyyy-MM-dd") ){
+				  	alert("Deadline is invalid");
+				  	return;
 				}
-			});
-			
+				temptask.save(value,{wait: true,
+					success: function() {
+						//return the task list
+						oneTaskView.hide();
+						tasksView.show();
+						$(".add-btn").show();
+						$(".back-btn").hide();
+						$(".updating").hide();
+						$(".title-content").width($(".data").width()-160);
+						myTasks.fetch({reset: true, success:function(){
+							var maxY = $(".task_list").height() - $(".task_list > .wrapper").height();
+							maxY = maxY > 0 ? 0:maxY;
+							var tmptask = myTasks.findWhere({id: temptask.id});
+							var index = myTasks.indexOf(tmptask);
+							if(index > -1){
+								var newY = -$(".data").outerHeight()*index;
+								console.debug(newY+":"+maxY);
+								if(newY < maxY )
+									tasksView.scroller.scrollTo(0,  maxY, 0);
+								else
+									tasksView.scroller.scrollTo(0,  newY, 0);
+								//Emphasize the new element
+								$(".data").eq(index).css({'background-color':'#d3d3d3'}).animate({'background-color':'#fff'},1000);
+							}
+						}});
+					},
+					error: function(model, response) {
+						alert(response.responseJSON.message);
+						myTasks.fetch({reset: true, success:function(){
+							$(".update-btn").show();
+							$(".updating").hide();
+						}});
+					}
+				});
+			}
+			else{
+				alert("Task can not be updated when it is done!");
+				$(".update-btn").show();
+				$(".updating").hide();
+			}
 		}
 	});
 	$(".submit-btn").click(function(event){
 		tasksView.addTask(tasksView.retrieveValues());
-		$(".add-title").val('');
-		$('.new-form').hide();
-		$(".show-form").show();
 		//console.debug(tasksView.retrieveValues());
 	});
 	$(window).resize(function(){
 		$(".task_list").height($(".left").height()-63);
 		$(".title-content").width($(".data").width()-160);
 	});
-//==========================Helper==================================================
-	function addFmClick(view, selector, callback) {
-		view.events = view.events || {};
-		var x, y;
-		view.events['mousedown ' + selector] = function(e) {
-		  x = e.screenX;
-		  y = e.screenY;
-		};
-		view.events['mouseup ' + selector] = function(e) {
-		  if (x == e.screenX && y == e.screenY)
-		    callback.call(this, e);
-		};
-		view.$el.on('fmClick', selector, function(e) {
-		  callback.call(view, e);
-		});
-	}
+//======================================================================================
+Date.prototype.Format = function (fmt) {
+    var o = {
+        "M+": this.getMonth() + 1, 
+        "d+": this.getDate(), 
+        "h+": this.getHours(),
+        "m+": this.getMinutes(), 
+        "s+": this.getSeconds(), 
+        "q+": Math.floor((this.getMonth() + 3) / 3), 
+        "S": this.getMilliseconds() 
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
+$.datepicker._gotoToday = function(id) {
+       var target = $(id);
+       var inst = this._getInst(target[0]);
+       if (this._get(inst, 'gotoCurrent') && inst.currentDay) {
+           inst.selectedDay = inst.currentDay;
+           inst.drawMonth = inst.selectedMonth = inst.currentMonth;
+           inst.drawYear = inst.selectedYear = inst.currentYear;
+       } else {
+           var date = new Date();
+         inst.selectedDay = date.getDate();
+         inst.drawMonth = inst.selectedMonth = date.getMonth();
+         inst.drawYear = inst.selectedYear = date.getFullYear();
+         this._setDateDatepicker(target, date);
+         this._selectDate(id, this._getDateDatepicker(target));
+     }
+     this._notifyChange(inst);
+     this._adjustDate(target);
+}
 //===========================Task===================================================
 	var Task = Backbone.Model.extend({
 		initialize: function() {
 		},
 		setDone: function(done) {
-			if(done)
-			this.save({"isdone":true});
-			else
-			this.save({"isdone":false});
+			if(done){
+				this.save({"isdone":true},{success:function(){
+					myTasks.fetch({reset: true});
+				}});
+			}
+			else{
+				this.save({"isdone":false},{success:function(){
+					myTasks.fetch({reset:true});
+				}});
+			}
 	    },
 	    urlRoot: "/tasks/",
 	    validate: function(attrs, options) {
 		    if (attrs.title == "" ) {
 		     	return "Title can't be blank";
 		    }
-
-	    	//var today = new Date();
-		    //var date = new Date(today.getFullYear(),today.getMonth(), today.getDate());
-		    //|| (new Date(attrs.deadline) < date)
-		    if(attrs.deadline == "" ) {
+		    if(attrs.deadline == "") {// || attrs.deadline < new Date().Format("yyyy-MM-dd") 
 		    	return "Deadline is invalid";
 		    }
 
@@ -106,9 +157,9 @@ $(function() {
 	});
 	var TaskList = Backbone.Collection.extend({
 		model: Task,
-		url: '/tasks',
+		url: '/tasks?date=' + new Date().Format("yyyy-MM-dd"),
 		initialize: function() {
-		},
+		}/*,
 		comparator: function(a,b) {
 	       if(a.get("isdone")>b.get("isdone"))
 	       	return 1;
@@ -121,7 +172,7 @@ $(function() {
 	       		return -1;
 	       	else return 0;
 	       }
-	    }
+	    }*/
 	});
 
 	var TaskView = Backbone.View.extend({
@@ -130,15 +181,13 @@ $(function() {
 		className: "data pr",
 		events: {
 	      'click a.del-btn': '_delete',
+	      'change .isdone': 'clickLeftBtn',
 		  'dblclick .text': 'showOneTask'
 	    },
 		initialize: function() {
-			//this.tasks = this.options.tasks;
-			addFmClick(this, '.isdone',   this.clickLeftBtn);
-			this.listenTo(this.model, "change", this.changeRefresh);
+			//this.listenTo(this.model, "change", this.changeRefresh);
 		},
 		changeRefresh: function() {
-			myTasks.sort();
 		},
 		render: function() {
 			var json = this.model.toJSON();
@@ -154,8 +203,8 @@ $(function() {
 	          done = $t[0].checked  ? true  : false
 	          //task_id = $t.parent().data('id'),
 	          //task  = myTasks.get(task_id);
-	      	  this.model.setDone(!done);
-	      	  this.model.collection.sort();
+	      	  this.model.setDone(done);
+	      	  //this.model.collection.fetch({reset:true});
 	    },
 	    clickLeftBtn: function(e){
 	    	this.clickCheckbox(e);
@@ -186,9 +235,9 @@ $(function() {
 		events: {
 		},
 		initialize: function() {
-		  //this.collection.bind('add',    this.addOne, this);
+		  this.collection.bind('add',    this.addOne, this);
 		  this.collection.bind('reset',  this.addAll, this);
-		  this.collection.bind('sort',  this.refresh, this);
+		  //this.collection.bind('sort',  this.refresh, this);
 	      this.scroller = new iScroll("task_list",{
 	      	 hScroll : false,
 	      	 fadeScrollbar: true
@@ -201,9 +250,40 @@ $(function() {
 			  alert(error);
 		  });
 
-	      newtask.set(value).save(null,{
+		  if(value.deadline < new Date().Format("yyyy-MM-dd") ){
+		  	alert("Deadline is invalid");
+		  	return;
+		  }
+
+	      newtask.set(value).save(null,{wait:true,
 	      	success: function() {
-	      		that.collection.fetch();
+	      		//Go back to today
+	      		var today = new Date().Format("yyyyMMdd");
+	      		myTasks.url = '/tasks?date=' + today;
+	      		myTasks.fetch({reset: true, success:function(){
+					$(".add-title").val('');
+					$('.new-form').hide();
+					$(".show-form").show();
+					$( "#datepicker" ).datepicker( "setDate", today);
+					//Scroll to the new element
+					var maxY = $(".task_list").height() - $(".task_list > .wrapper").height();
+					maxY = maxY > 0 ? 0:maxY;
+					var tmptask = myTasks.findWhere({id: newtask.id});
+					var index = myTasks.indexOf(tmptask);
+					if(index > -1){
+						var newY = -$(".data").outerHeight()*index;
+						console.debug(newY+":"+maxY);
+						if(newY < maxY )
+							tasksView.scroller.scrollTo(0,  maxY, 0);
+						else
+							tasksView.scroller.scrollTo(0,  newY, 0);
+						//Emphasize the new element
+						$(".data").eq(index).css({'background-color':'#d3d3d3'}).animate({'background-color':'#fff'},1000);
+					}
+		      	}});
+	      	},
+	      	error: function(model, response) {
+	      		alert(response.responseJSON.message);
 	      	}
 	      });
 	      
@@ -211,7 +291,7 @@ $(function() {
 	    retrieveValues: function(){
 	    	if($(".new-form").is(":visible")){
 		    	return {
-			        title: $(".add-title").val(),
+			        title: $(".add-title").val().trim(),
 			        deadline: $(".add-deadline").val()
 			    };
 			}
@@ -223,7 +303,9 @@ $(function() {
 		  $(".task_list > .wrapper > ul").append(view.render().el);
 		},
 		addAll: function() {
-		  this.collection.each(this.addOne);
+			$(".data").remove();
+		    this.collection.each(this.addOne);
+			this.scroller.refresh();
 		},
 		refresh: function() {
 			$(".data").remove();
@@ -267,30 +349,15 @@ var OneTaskView = Backbone.View.extend({
 		  $(".one_task").children().detach();
 		},
 		retrieveValues: function() {
+			var temprm = $(".oremind").val()==""? "":new Date($(".oremind").val().replace("T", " ")).toISOString();
 	    	return {
-		        title: $(".otitle").html(),
+		        title: $(".otitle").html().replace(new RegExp('&nbsp;', 'gi'),"").trim(),
 		        deadline: $(".odeadline").val(),
-		        remind: new Date($(".oremind").val().replace("T", " ")).toISOString(),
+		        remind: temprm,
 		        remark: $(".oremark").html()
 		    };
 		}
 });
-//======================================================================================
-Date.prototype.Format = function (fmt) {
-    var o = {
-        "M+": this.getMonth() + 1, 
-        "d+": this.getDate(), 
-        "h+": this.getHours(),
-        "m+": this.getMinutes(), 
-        "s+": this.getSeconds(), 
-        "q+": Math.floor((this.getMonth() + 3) / 3), 
-        "S": this.getMilliseconds() 
-    };
-    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
-    for (var k in o)
-    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-    return fmt;
-}
 //======================================================================================
 	window.myTasks = new TaskList(); 
 	var tasksView = new TasksView({collection: myTasks});
@@ -302,19 +369,21 @@ Date.prototype.Format = function (fmt) {
 	myTasks.fetch({
 		success:function(){
 			$(".title-content").width($(".data").width()-160);
+			tasksView.scroller.refresh();
 			//console.debug($(".title-content").width());
 		}
 	});
 	$(".task_list").height($(".left").height()-63);
 	var currentDate = $( "#datepicker" ).datepicker({
+	  showButtonPanel: true,
 	  dateFormat: "yymmdd",
 	  onSelect: function(dateText) {
-	    console.debug(dateText);
+	    //console.debug(dateText);
 	    myTasks.url = '/tasks?date=' + dateText;
 	    myTasks.fetch({
 	    	reset: true,
 			success:function(){
-				tasksView.refresh();
+				//tasksView.refresh();
 				$(".title-content").width($(".data").width()-160);
 				//console.debug($(".title-content").width());
 			}

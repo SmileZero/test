@@ -4,16 +4,56 @@
 		"selected_items":
 		[
 			[
+				"yy",
+				"yyyymmdd"
+			],
+			[
+				"for",
+				"Format"
+			],
+			[
+				"dd",
+				"yyyy-MM-dd"
+			],
+			[
+				"new",
+				"newtask"
+			],
+			[
+				"YY",
+				"yyyy-MM-ddThh"
+			],
+			[
+				"task",
+				"tasksView"
+			],
+			[
+				"re",
+				"refresh"
+			],
+			[
+				"add",
+				"add-btn"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"is",
+				"isdone"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
 				"sub",
 				"subject"
 			],
 			[
 				"dea",
 				"deadline"
-			],
-			[
-				"task",
-				"tasksView"
 			],
 			[
 				"ret",
@@ -82,36 +122,16 @@
 			[
 				"assert",
 				"assert_equal"
-			],
-			[
-				"new",
-				"new_product"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/controllers/tasks_controller.rb",
-			"settings":
-			{
-				"buffer_size": 3254,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/users_controller.rb",
-			"settings":
-			{
-				"buffer_size": 3498,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "app/views/list/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 2589,
+				"buffer_size": 2812,
 				"line_ending": "Unix"
 			}
 		},
@@ -124,10 +144,18 @@
 			}
 		},
 		{
+			"file": "/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/assets/javascripts/home.js",
+			"settings":
+			{
+				"buffer_size": 33765,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/assets/stylesheets/list.css.scss",
 			"settings":
 			{
-				"buffer_size": 2770,
+				"buffer_size": 2877,
 				"line_ending": "Unix"
 			}
 		},
@@ -143,16 +171,40 @@
 			"file": "app/assets/javascripts/list.js",
 			"settings":
 			{
-				"buffer_size": 9034,
+				"buffer_size": 11896,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/application.css.scss",
+			"file": "app/models/task.rb",
 			"settings":
 			{
-				"buffer_size": 999,
+				"buffer_size": 680,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 263,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/tasks_controller.rb",
+			"settings":
+			{
+				"buffer_size": 4087,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "note.txt",
+			"settings":
+			{
+				"buffer_size": 97,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -179,7 +231,7 @@
 				"Set Syntax: CSS"
 			]
 		],
-		"width": 392.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -196,7 +248,26 @@
 	},
 	"file_history":
 	[
+		"/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/assets/javascripts/reader.js",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/stylesheets/application.css.scss",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/javascripts/application.js",
+		"/C/Users/51ibm/Desktop/index.html",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/note.txt",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/app/controllers/tags_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/controllers/tasks_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/app/controllers/docs_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/users_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/controllers/tags_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/FeastMind/app/controllers/users_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/controllers/metadata_controller.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/user.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/application_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/clubs_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/app_controller.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/db/migrate/20120806044025_create_users.rb",
+		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/Gemfile",
+		"/D/Download/PortableGit-pre-alpha-64-bit/blog/config/database.yml",
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/Gemfile",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/collection.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/models/tag.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/stylesheets/sessions.css.scss",
@@ -224,7 +295,6 @@
 		"/D/Download/PortableGit-pre-alpha-64-bit/depot/config/locales/es.yml",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/todolist.sublime-project",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/helpers/sessions_helper.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/note.txt",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/mailers/task_notifier.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/helpers/sessions_helper.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/tags_controller.rb",
@@ -243,15 +313,8 @@
 		"/D/Download/PortableGit-pre-alpha-64-bit/emailreminder/config/environments/development.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/layouts/application.html.erb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/models/user.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/application_controller.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/controllers/metadata_controller.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/controllers/application_controller.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/javascripts/application.js",
-		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/Gemfile",
-		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/stylesheets/application.css.scss",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/models/task.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/clubs_controller.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/app_controller.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/stylesheets/scaffolds.css.scss",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/assets/javascripts/list.js",
 		"/D/Download/PortableGit-pre-alpha-64-bit/todolist/app/views/list/index2.html.erb",
@@ -310,24 +373,13 @@
 		"/D/Download/PortableGit-pre-alpha-64-bit/depot/config/initializers/i18n.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/models/user.rb",
 		"/D/Download/PortableGit-pre-alpha-64-bit/depot/config/routes.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/Gemfile",
 		"/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/Gemfile.lock",
 		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/line_items_controller.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/sessions_controller.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/test_helper.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/fixtures/users.yml",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/functional/sessions_controller_test.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/sessions/new.html.erb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/admin/index.html.erb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/admin_controller.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/users/index.html.erb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/test/functional/users_controller_test.rb",
-		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/views/users/_form.html.erb",
-		"/C/Users/51ibm/.gemrc"
+		"/D/Download/PortableGit-pre-alpha-64-bit/depot/app/controllers/sessions_controller.rb"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -341,6 +393,51 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"select",
+			"data",
+			"scroller",
+			".y",
+			"scroller.y",
+			"myTasks",
+			"addTask",
+			"update",
+			"Deadline is invalid",
+			"invalid",
+			"validate",
+			"update",
+			"Format",
+			"url",
+			"Format",
+			"addT",
+			"dead",
+			"setDone",
+			"tasksView.refresh();",
+			"tasksView.refresh();//",
+			"addT",
+			"add",
+			"addT",
+			"addTask",
+			"deadline",
+			"remind",
+			"Date",
+			"refresh",
+			"sort",
+			"fetch",
+			"addTask",
+			"new Date",
+			"refresh",
+			"addT",
+			"show",
+			"tasksView",
+			"debug",
+			"update-btn",
+			"save(null",
+			"retrieveValues",
+			"retr",
+			"addTask",
+			"response",
+			"addTask",
+			"error",
 			"showOneTask",
 			"click",
 			"text",
@@ -423,30 +520,7 @@
 			"icon",
 			"data-icon",
 			"icons",
-			"del-btn",
-			"clubView",
-			"delete",
-			"contentEditable",
-			"set",
-			"update",
-			"folder",
-			"change",
-			"View",
-			"tagView",
-			"taglist",
-			"_.ex",
-			"sort",
-			"sync",
-			"setStar",
-			"data",
-			"addFmClick",
-			"clickLeftBtn",
-			"clickStar",
-			"id",
-			"friend",
-			"h2",
-			"number_to_currency",
-			"3342"
+			"del-btn"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -465,79 +539,23 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 9,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/tasks_controller.rb",
-					"settings":
-					{
-						"buffer_size": 3254,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3051,
-								3051
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1709.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/controllers/api/users_controller.rb",
-					"settings":
-					{
-						"buffer_size": 3498,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								761,
-								828
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 256.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/views/list/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 2589,
+						"buffer_size": 2812,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1770,
-								1770
+								2548,
+								2548
 							]
 						],
 						"settings":
@@ -547,13 +565,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 306.0,
+						"translation.y": 851.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/javascripts/app.js",
 					"settings":
 					{
@@ -564,8 +582,8 @@
 						"selection":
 						[
 							[
-								9604,
-								9609
+								35616,
+								35616
 							]
 						],
 						"settings":
@@ -575,25 +593,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 55256.0,
+						"translation.y": 20892.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/assets/stylesheets/list.css.scss",
+					"buffer": 2,
+					"file": "/D/Download/PortableGit-pre-alpha-64-bit/fm2/server/app/assets/javascripts/home.js",
 					"settings":
 					{
-						"buffer_size": 2770,
+						"buffer_size": 33765,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1746,
-								1786
+								33760,
+								33760
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 18539.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/assets/stylesheets/list.css.scss",
+					"settings":
+					{
+						"buffer_size": 2877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								556,
+								556
 							]
 						],
 						"settings":
@@ -602,13 +648,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1788.0,
+						"translation.y": 296.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "/D/Download/PortableGit-pre-alpha-64-bit/PaperClub/app/assets/stylesheets/app.css.scss",
 					"settings":
 					{
@@ -630,25 +676,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1284.0,
+						"translation.y": 1027.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "app/assets/javascripts/list.js",
 					"settings":
 					{
-						"buffer_size": 9034,
+						"buffer_size": 11896,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3634,
-								3634
+								1677,
+								1677
 							]
 						],
 						"settings":
@@ -656,36 +702,116 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 2156.0,
+						"translation.x": 34.0,
+						"translation.y": 770.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/assets/stylesheets/application.css.scss",
+					"buffer": 6,
+					"file": "app/models/task.rb",
 					"settings":
 					{
-						"buffer_size": 999,
+						"buffer_size": 680,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								610,
-								610
+								659,
+								659
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 181.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/application_controller.rb",
+					"settings":
+					{
+						"buffer_size": 263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								258,
+								258
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controllers/tasks_controller.rb",
+					"settings":
+					{
+						"buffer_size": 4087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2428,
+								2428
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1144.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "note.txt",
+					"settings":
+					{
+						"buffer_size": 97,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

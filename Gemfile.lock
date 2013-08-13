@@ -117,7 +117,7 @@ DEPENDENCIES
   jquery-rails (~> 2.3.0)
   jquery-ui-rails
   mysql2 (= 0.3.11)
-  rails
+  rails (= 3.2.13)
   rufus-scheduler
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
